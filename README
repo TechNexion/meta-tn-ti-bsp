@@ -1,0 +1,11 @@
+This README file contains information on the contents of the meta-tn-ti-bsp layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: git://github.com/technexion/meta-tn-ti-bsp
+  branch: <dunfell>
+
+

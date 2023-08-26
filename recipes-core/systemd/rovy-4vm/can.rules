@@ -1,0 +1,11 @@
+# Perform sane CAN device mapping for ROVY-4VM
+KERNELS=="2701000.can", ACTION=="add", NAME="can_a"
+KERNELS=="2711000.can", ACTION=="add", NAME="can_b"
+KERNELS=="2741000.can", ACTION=="add", NAME="can_c"
+KERNELS=="2751000.can", ACTION=="add", NAME="can_d"
+KERNELS=="2761000.can", ACTION=="add", NAME="can_e"
+KERNELS=="2771000.can", ACTION=="add", NAME="can_f"
+KERNELS=="2781000.can", ACTION=="add", NAME="can_g"
+KERNELS=="2791000.can", ACTION=="add", NAME="can_h"
+KERNELS=="40528000.can", ACTION=="add", NAME="mcu_can0"
+KERNELS=="40568000.can", ACTION=="add", NAME="mcu_can1"
