@@ -1,3 +1,7 @@
-COMPATIBLE_MACHINE_append = "|rovy-4vm"
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-PLAT_SOC_rovy-4vm = "j721e"
+include recipes-bsp/tn-machine-add/tn-machine-add.inc
+
+SRC_URI_append = " \
+    file://0001-src-ldc-Add-support-for-1to1-remap.patch \
+"
