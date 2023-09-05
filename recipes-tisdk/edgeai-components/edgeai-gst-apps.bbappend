@@ -1,3 +1,3 @@
-COMPATIBLE_MACHINE_append = "|rovy-4vm"
+include recipes-bsp/tn-machine-add/tn-machine-add.inc
 
-PLAT_SOC_rovy-4vm = "j721e"
+RDEPENDS_${PN} += "python3-pyyaml"

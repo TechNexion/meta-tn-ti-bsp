@@ -22,5 +22,5 @@ do_install () {
     install -m 0644 ${S}/uEnv_edgeai-apps.txt ${D}/boot/uEnv.txt
 }
 
-FILES_${PN} += "/boot/*"
+FILES_${PN} += "/boot/uEnv.txt"
 

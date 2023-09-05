@@ -1,7 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}/${MACHINE}:"
 
-COMPATIBLE_MACHINE_append = "|rovy-4vm"
-PLAT_SOC_rovy-4vm = "j721e"
+include recipes-bsp/tn-machine-add/tn-machine-add.inc
 
 do_install_append() {
 	install -d ${D}/boot
