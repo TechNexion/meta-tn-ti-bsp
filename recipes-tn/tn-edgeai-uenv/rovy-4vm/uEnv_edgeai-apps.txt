@@ -23,9 +23,16 @@ dorprocboot=1
 
 # Setup devicetree overlays
 name_overlays= \
-    k3-j721e-edgeai-apps.dtb \
-    k3-j721e-rovy-fpdlink-fusion.dtbo \
-    k3-j721e-rovy-evm-usb0-usb1.dtbo \
-    k3-j721e-rovy-evm-vizionpanel-vl10112880.dtbo \
-    k3-j721e-rovy-evm-vizionlink-tevi-ap1302-0-0.dtbo \
-    k3-j721e-rovy-evm-vizionlink-tevi-ap1302-0-1.dtbo
+    ti/k3-j721e-edgeai-apps.dtbo \
+    ti/k3-j721e-rovy-evm-vizionpanel-vl10112880.dtbo \
+    ti/k3-j721e-rovy-evm-mcu-uarts.dtbo \
+    ti/k3-j721e-rovy-fpdlink-fusion.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-0-0.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-0-1.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-0-2.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-0-3.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-1-0.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-1-1.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-1-2.dtbo \
+    ti/k3-fpdlink-tevi-ap1302-1-3.dtbo
+    

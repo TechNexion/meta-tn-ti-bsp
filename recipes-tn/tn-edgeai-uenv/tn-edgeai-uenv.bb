@@ -8,7 +8,7 @@ SRC_URI = "\
     file://uEnv_edgeai-apps.txt \
 "
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/${MACHINE}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${MACHINE}:"
 
 PR = "r1"
 PV = "1.0"
@@ -17,10 +17,10 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 S = "${WORKDIR}"
 
+FILES:${PN} += "/boot/uEnv.txt"
+
 do_install () {
     install -d ${D}/boot/
     install -m 0644 ${S}/uEnv_edgeai-apps.txt ${D}/boot/uEnv.txt
 }
-
-FILES_${PN} += "/boot/uEnv.txt"
 
