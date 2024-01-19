@@ -2,17 +2,17 @@ require ${METATIBASE}/recipes-bsp/u-boot/u-boot-ti.inc
 
 SUMMARY = "u-boot bootloader for TechNexion TI devices"
 
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=5a7450c57ffe5ae63fd732446b988025"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=2ca5f2c35c8cc335f0a19756634782f1"
 
 PR = "r0"
 
-BRANCH = "tn-ti-u-boot-2021.01_08_06_00_06-next"
+BRANCH = "tn-ti-u-boot-2023.04_09_00_01_03-next"
 
-UBOOT_GIT_URI = "git://github.com/johnweber/u-boot-ti.git"
+UBOOT_GIT_URI = "git://github.com/TechNexion-customization/u-boot-ti.git"
 
 SRC_URI[sha256sum] = "99b601ba77f53b3c254964d694fc3c3898e951339b0228075e75beec787a3c30"
 
-SRCREV = "0d2d0839bbdc0c0cf084fcf6d3934d0849087ec4"
+SRCREV = "57e94207b76407fc12eec6332103a787b42f5887"
 
 
 COMPATIBLE_MACHINE = "^("
