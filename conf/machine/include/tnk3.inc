@@ -4,7 +4,7 @@ require conf/machine/include/k3.inc
 MACHINEOVERRIDES =. "tn:"
 
 # Install modules in initramfs and roofs
-PACKAGE_INSTALL_append = " kernel-modules"
+PACKAGE_INSTALL:append = " kernel-modules"
 
 INITRAMFS_FSTYPES = "wic.xz"
 

@@ -1,10 +1,27 @@
 require conf/machine/include/tnk3.inc
+SOC_FAMILY:append = ":j721e"
 
-SOC_FAMILY:append = ":j7"
+MACHINE_FEATURES += "screen gpu"
 
-# j7 has a Rogue GPU core
-PREFERRED_PROVIDER_virtual/egl:j7 = "ti-img-rogue-umlibs"
-PREFERRED_PROVIDER_virtual/libgles1:j7 = "ti-img-rogue-umlibs"
-PREFERRED_PROVIDER_virtual/libgles2:j7 = "ti-img-rogue-umlibs"
-PREFERRED_PROVIDER_virtual/libgbm:j7 = "ti-img-rogue-umlibs"
-PREFERRED_PROVIDER_virtual/gpudriver:j7 = "ti-img-rogue-driver"
+require conf/machine/include/mesa-pvr.inc
+PREFERRED_PROVIDER_virtual/gpudriver ?= "ti-img-rogue-driver"
+
+IMAGE_BOOT_FILES += "sysfw.itb"
+
+# Default on J721e is for GP
+IMAGE_BOOT_FILES += "tiboot3-j721e-gp-rovy.bin"
+IMAGE_BOOT_FILES += "sysfw-j721e-gp-rovy.itb"
+
+# Since default on J721e is for GP, add a version for HS-FS
+#IMAGE_BOOT_FILES += "tiboot3-j721e_sr2-hs-fs-rovy.bin"
+#IMAGE_BOOT_FILES += "sysfw-j721e_sr2-hs-fs-rovy.itb"
+
+# Since default on J721e is for GP, add a version for HS-SE
+#IMAGE_BOOT_FILES += "tiboot3-j721e_sr1_1-hs-rovy.bin"
+#IMAGE_BOOT_FILES += "sysfw-j721e_sr1_1-hs-rovy.itb"
+
+TFA_BOARD = "generic"
+
+OPTEEMACHINE = "k3-j721e"
+
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "cadence-mhdp-fw vxd-dec-fw ti-eth-fw"
