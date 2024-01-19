@@ -1,4 +1,4 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-COMPATIBLE_MACHINE_append = "|rovy-4vm"
-TARGET_PRODUCT_rovy-4vm = "j721e_linux"
+#COMPATIBLE_MACHINE:append = "|rovy-4vm"
+TARGET_PRODUCT:rovy-4vm = "j721e_linux"
