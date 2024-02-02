@@ -25,5 +25,32 @@ dorprocboot=1
 name_overlays= \
     ti/k3-j721e-edgeai-apps.dtbo \
     ti/k3-j721e-rovy-evm-vizionpanel-vl10112880.dtbo \
-    ti/k3-j721e-rovy-evm-mcu-uarts.dtbo
-    
+    ti/k3-j721e-rovy-evm-mcu-uarts.dtbo \
+    ti/k3-j721e-rovy-evm-fusion.dtbo \
+    ti/k3-j721e-rovy-evm-4xsgmii.dtbo \
+    ti/k3-fpdlink-vls-0-0.dtbo \
+    ti/k3-fpdlink-vls-0-1.dtbo \
+    ti/k3-fpdlink-vls-0-2.dtbo \
+    ti/k3-fpdlink-vls-0-3.dtbo
+
+# Enable 4xSGMII expansion on SERDES4
+#    ti/k3-j721e-rovy-evm-4xsgmii.dtbo
+
+# Enable 4x VLS sensors on CSI0
+#    ti/k3-fpdlink-vls-0-0.dtbo \
+#    ti/k3-fpdlink-vls-0-1.dtbo \
+#    ti/k3-fpdlink-vls-0-2.dtbo \
+#    ti/k3-fpdlink-vls-0-3.dtbo
+
+# Enable 4x VLS sensors on CSI1
+#    ti/k3-fpdlink-vls-1-0.dtbo \
+#    ti/k3-fpdlink-vls-1-1.dtbo \
+#    ti/k3-fpdlink-vls-1-2.dtbo \
+#    ti/k3-fpdlink-vls-1-3.dtbo
+
+# Add these overlays to 'name_overlays' to enable additional functions
+#   Enable MCU_UART0 and WKUP_UART0
+#    ti/k3-j721e-rovy-evm-mcu-uarts.dtbo \
+
+# Enable 2x VizionLink (FPDLink deserializers) on ROVY-4VM-EVK 
+#   ti/k3-j721e-rovy-evm-fusion.dtbo \
