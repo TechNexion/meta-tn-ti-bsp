@@ -26,14 +26,14 @@ S = "${WORKDIR}/git"
 
 BRANCH = "tn-ti_6.1.46_09.00.00.009-next"
 
-SRCREV = "c8fadc17aa2dc7d52c56737b9cbe2b99bdd1ab32"
+SRCREV = "dd213dcfe0c07993c7e307669418e49d4c04662b"
 PV = "6.1.46+git${SRCPV}"
 
 # Append to the MACHINE_KERNEL_PR so that a new SRCREV will cause a rebuild
 MACHINE_KERNEL_PR:append = "b"
 PR = "${MACHINE_KERNEL_PR}"
 
-KERNEL_GIT_URI = "git://github.com/johnweber/linux-ti.git"
+KERNEL_GIT_URI = "git://github.com/TechNexion/linux-tn-ti.git"
 KERNEL_GIT_PROTOCOL = "https"
 SRC_URI += "${KERNEL_GIT_URI};protocol=${KERNEL_GIT_PROTOCOL};branch=${BRANCH}"
 
