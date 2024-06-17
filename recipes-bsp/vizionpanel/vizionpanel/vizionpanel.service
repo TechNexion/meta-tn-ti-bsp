@@ -1,0 +1,9 @@
+[Unit]
+After=graphical.target
+
+[Service]
+ExecStart=/usr/sbin/vizionpanel.sh
+StandardOutput=journal+console
+
+[Install]
+WantedBy=graphical.target
