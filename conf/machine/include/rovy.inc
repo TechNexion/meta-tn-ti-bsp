@@ -30,4 +30,5 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "cadence-mhdp-fw vxd-dec-fw ti-eth-fw"
 #
 # Extra Stuff for TechNexion
 #
+IMAGE_INSTALL:append = " packagegroup-tn-tools"
 IMAGE_INSTALL:append = " vizionpanel"
