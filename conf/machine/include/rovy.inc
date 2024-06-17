@@ -11,6 +11,7 @@ IMAGE_BOOT_FILES += "sysfw.itb"
 # Default on J721e is for GP
 IMAGE_BOOT_FILES += "tiboot3-j721e-gp-rovy.bin"
 IMAGE_BOOT_FILES += "sysfw-j721e-gp-rovy.itb"
+IMAGE_BOOT_FILES:remove = "uEnv.txt"
 
 # Since default on J721e is for GP, add a version for HS-FS
 #IMAGE_BOOT_FILES += "tiboot3-j721e_sr2-hs-fs-rovy.bin"
