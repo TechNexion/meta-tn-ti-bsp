@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "vizionpanel init: Start..."
+
 BUS=$(dmesg | grep 'omap_i2c 2010000'  | sed -E 's/.*bus ([0-9]+).*/\1/')
 
 SER=0x0c
@@ -7,9 +9,11 @@ DES=0x2c
 SER_DEC=${SER#0x}
 
 if ! i2cdetect -y -r $BUS | grep -q "$SER_DEC"; then
-    echo "Device not found at address $SER. Exiting..."
+    echo "vizionpanel init: Device not found at address $SER. Exiting..."
     exit 1
 fi
+
+echo "vizionpanel init: Device found at i2c $BUS addr $SER. Initializing..."
 
 i2cset -y ${BUS} ${SER} 0x01 0x0f
 sleep 1
@@ -36,4 +40,5 @@ i2cset -y ${BUS} ${DES} 0x34 0x01
 i2cset -y ${BUS} ${DES} 0x1D 0x1d
 i2cset -y ${BUS} ${DES} 0x1E 0xdd
 
+echo "vizionpanel init: Complete."
 sleep 1
