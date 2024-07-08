@@ -25,7 +25,7 @@ TFA_BOARD = "generic"
 
 OPTEEMACHINE = "k3-j721e"
 
-IMAGE_FSTYPES:append = " ext4"
+IMAGE_FSTYPES:append = " ext4.xz ext4.bmap"
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "cadence-mhdp-fw vxd-dec-fw ti-eth-fw"
 
