@@ -24,9 +24,9 @@ KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT} \
 
 S = "${WORKDIR}/git"
 
-BRANCH = "tn-ti_6.1.46_09.00.00.009-next"
+BRANCH = "tn-ti_6.1.46_09.00.00.009"
 
-SRCREV = "760307c41cc7a51d252f2b1b24a2fa29fe022d08"
+SRCREV = "222a0e2d35dabce122d11504cb961c6d68a71f54"
 PV = "6.1.46+git${SRCPV}"
 
 # Append to the MACHINE_KERNEL_PR so that a new SRCREV will cause a rebuild
