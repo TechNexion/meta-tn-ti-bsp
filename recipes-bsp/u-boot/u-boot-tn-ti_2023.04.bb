@@ -6,13 +6,13 @@ LIC_FILES_CHKSUM = "file://Licenses/README;md5=2ca5f2c35c8cc335f0a19756634782f1"
 
 PR = "r0"
 
-BRANCH = "tn-ti-u-boot-2023.04_09_00_01_03-next"
+BRANCH = "tn-ti-u-boot-2023.04_09_00_01_03"
 
 UBOOT_GIT_URI = "git://github.com/TechNexion/u-boot-tn-ti.git"
 
 SRC_URI[sha256sum] = "99b601ba77f53b3c254964d694fc3c3898e951339b0228075e75beec787a3c30"
 
-SRCREV = "e95e133e0fc1e8cce6938211d9379e8fa1bf0fec"
+SRCREV = "daf877c9263b5aa3342bcbf851248ff98a90c115"
 
 
 COMPATIBLE_MACHINE = "^("
