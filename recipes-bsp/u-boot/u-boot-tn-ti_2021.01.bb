@@ -16,7 +16,7 @@ LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=5a7450c57ffe5ae63fd732446b988025"
 
 BRANCH = "tn-ti-u-boot-2021.01_08_06_00_07"
-SRCREV = "2b9ad44900e0af30fe22d497a00212c95f577628"
+SRCREV = "50203ff12726d198af76534ec5f9603b2d8b5a04"
 
 UBOOT_GIT_URI = "git://github.com/TechNexion/u-boot-tn-ti.git"
 UBOOT_GIT_PROTOCOL = "https"
