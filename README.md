@@ -7,7 +7,7 @@ This document outlines the key features and information regarding the latest Tec
 **Release Details:**
 
 - **Release Name:** tn-kirkstone_6.1.y_09.01.00.06
-- **Release Revision:** 2024071
+- **Release Revision:** 20240717
 
 **Supported TechNexion Products:**
   * **ARM64:**
