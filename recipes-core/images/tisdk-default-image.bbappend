@@ -1,3 +1,5 @@
+DISTRO_FEATURES_axon-am62ax += "wayland"
+
 IMAGE_INSTALL_append = "\
     packagegroup-tn-wlan \
     stressapptest \

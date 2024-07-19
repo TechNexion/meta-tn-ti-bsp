@@ -35,6 +35,7 @@ PACKAGECONFIG[dm] = "DM=${STAGING_DIR_HOST}${nonarch_base_libdir}/firmware/pdk-i
 
 PACKAGECONFIG_append_aarch64 = " atf optee"
 PACKAGECONFIG_append_am62xx = " dm"
+PACKAGECONFIG_append_am62axx = " dm"
 
 COMPATIBLE_MACHINE = "(ti-soc)"
 
