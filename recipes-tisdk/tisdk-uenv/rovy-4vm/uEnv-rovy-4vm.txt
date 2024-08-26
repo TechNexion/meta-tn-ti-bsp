@@ -21,8 +21,8 @@ dorprocboot=1
 
 # Setup devicetree overlays
 name_overlays= \
-    ti/k3-j721e-edgeai-apps.dtbo
-
+    ti/k3-j721e-edgeai-apps.dtbo \
+    ti/k3-j721e-rovy-evm-vizionpanel-vl10112880.dtbo
 #
 # Add these overlays to 'name_overlays' to enable additional functions.
 # Each overlay should be on a separate line, which each line ending in
