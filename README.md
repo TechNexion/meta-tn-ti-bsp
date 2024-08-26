@@ -7,7 +7,7 @@ This document outlines the key features and information regarding the latest Tec
 **Release Details:**
 
 - **Release Name:** tn-kirkstone_6.1.y_09.01.00.06
-- **Release Revision:** 20240717
+- **Release Revision:** 20240826
 
 **Supported TechNexion Products:**
   * **ARM64:**
@@ -24,14 +24,14 @@ For a comprehensive list of supported peripherals, known issues, and detailed in
 1. TechNexion Vizionpanel (10.1 inch LVDS panel) support
 2. TechNexion VLS3 series camera support
 3. TechNexion ROVY-M2-M-SGMII - QUAD port ethernet expansion board
+4. TechNexion VizionViewer software support
 
 **Known Issues:**
 
-1. TechNexion VizionViewer software is not yet available.
 
  **BSP Version Details:**
 
 * **Tag name on GitHub:** tn-kirkstone_6.1.y_09.01.00.06_20240715
 * **u-boot-tn-ti:** daf877c9263b5aa3342bcbf851248ff98a90c115
-* **linux-tn-ti:** 222a0e2d35dabce122d11504cb961c6d68a71f54
+* **linux-tn-ti:** 26c370d851c4902bcf6e7ca10e0eedecb7ee30ad
 * **meta-tn-ti-bsp:** 2b0b70f826659b9dec52e1bc53264da4c1cc13bf
