@@ -32,5 +32,11 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "cadence-mhdp-fw vxd-dec-fw ti-eth-fw"
 #
 # Extra Stuff for TechNexion
 #
+
+LICENSE_FLAGS_ACCEPTED:append = " commercial_tn"
 IMAGE_INSTALL:append = " packagegroup-tn-tools"
 IMAGE_INSTALL:append = " vizionpanel"
+IMAGE_INSTALL:append = " packagegroup-tn-vizionsdk"
+
+#------ For VizionSDK/VizionViewer ------
+APTGET_EXTRA_PACKAGES:append:tn-vizionsdk = " gnupg"
