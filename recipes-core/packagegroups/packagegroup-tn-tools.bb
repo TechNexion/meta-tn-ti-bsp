@@ -49,4 +49,6 @@ RDEPENDS:${PN} = " \
     v4l-utils \
     udev \
     trace-cmd \
+    mtd-utils \
+    bmap-tools \
 "
