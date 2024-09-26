@@ -12,7 +12,7 @@ UBOOT_GIT_URI = "git://github.com/TechNexion/u-boot-tn-ti.git"
 
 SRC_URI[sha256sum] = "99b601ba77f53b3c254964d694fc3c3898e951339b0228075e75beec787a3c30"
 
-SRCREV = "186b73a447308fc5644edfd27ca614e7babbc2de"
+SRCREV = "94368d8e5950a8237455b74988ebea82390d437c"
 
 
 COMPATIBLE_MACHINE = "^("
