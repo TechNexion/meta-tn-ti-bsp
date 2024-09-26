@@ -8,6 +8,8 @@ SER=0x0c
 DES=0x2c
 SER_DEC=${SER#0x}
 
+sleep 3
+
 if ! i2cdetect -y -r $BUS | grep -q "$SER_DEC"; then
     echo "vizionpanel init: Device not found at address $SER. Exiting..."
     exit 1
