@@ -1,9 +1,10 @@
 [Unit]
-After=graphical.target
+After=default.target systemd-udev-trigger.service
+Wants=systemd-udev-trigger.service
 
 [Service]
 ExecStart=/usr/sbin/vizionpanel.sh
 StandardOutput=journal+console
 
 [Install]
-WantedBy=graphical.target
+WantedBy=default.target
