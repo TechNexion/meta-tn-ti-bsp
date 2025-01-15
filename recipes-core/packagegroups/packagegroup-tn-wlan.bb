@@ -17,10 +17,10 @@ NETWORKMANAGER_UTILS = "networkmanager"
 
 WIFITOOLS = "${@bb.utils.contains('MACHINE_FEATURES', 'nmcli', "${NETWORKMANAGER_UTILS}", "${CONNMAN_UTILS}", d)}"
 
-RDEPENDS_${PN}_append = "\
+RDEPENDS:${PN}:append = "\
     ${WIFITOOLS} \
     ${@bb.utils.contains('DISTRO_FEATURES', '3g', "${3GTOOLS}", '', d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'nmcli', "${5GTOOLS}", '', d)} \
     "
 #It would cause package conflict to install networkmanager/connman in ubuntu image
-RDEPENDS_${PN}_remove_ubuntu = "${WIFITOOLS}"
+RDEPENDS:${PN}:remove:ubuntu = "${WIFITOOLS}"

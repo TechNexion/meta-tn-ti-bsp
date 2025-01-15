@@ -1,4 +1,4 @@
-IMAGE_INSTALL_append = "\
+IMAGE_INSTALL:append = "\
     packagegroup-tn-wlan \
     stressapptest \
     ramsmp \
