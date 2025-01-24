@@ -39,6 +39,7 @@ PREFERRED_PROVIDER_virtual/kernel:tn = "linux-tn-ti"
 #
 PREFERRED_PROVIDER_virtual/bootloader:tn = "u-boot-tn-ti"
 PREFERRED_PROVIDER_u-boot:tn = "u-boot-tn-ti"
+IMAGE_BOOT_FILES:remove = "ti_logo_414x97_32bpp.bmp.gz"
 
 # Extra NXP Wi-Fi and Bluetooth driver firmware and driver
 MACHINE_FIRMWARE:append = " ${@bb.utils.contains('MACHINE_FEATURES', 'nxpiw416-sdio', 'firmware-nxp-wifi-nxpiw416-sdio', '', d)}"
